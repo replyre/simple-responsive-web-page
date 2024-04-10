@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+      .top {
+        height: 20%;
+      }
+      .bottom {
+        display: flex;
+        background-color: gold;
+        height: 80%;
+        align-items: center;
+        justify-content: center;
+      }
+      .right {
+        height: 90%;
+        width: 30%;
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: aqua; */
+      }
+      img {
+        position: relative;
+        top: -70px;
+        height: 550px;
+        width: 400px;
+      }
+      .right h2 {
+        font-size: 48px;
+        text-align: center;
+        font-weight: bolder;
+        padding-bottom: 10%;
+      }
+      .right p {
+        font-size: 20px;
+        text-align: center;
+        padding: 0px 30px;
+        font-weight: bold;
+        padding-bottom: 10%;
+      }
+      .right h6 {
+        text-align: center;
+        font-size: 18px;
+        padding-bottom: 5%;
+      }
+      .right h6 a {
+        color: black;
+      }
+      button {
+        background-color: black;
+        font-size: 18px;
+        padding: 8px;
+        color: white;
+        width: 40%;
+      }
+      @media screen and (max-width: 600px) {
+        .bottom {
+          display: flex;
+          flex-direction: column;
+        }
+        img {
+          position: relative;
+          height: 300px;
+          width: 300px;
+        }
+        .right {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top"></div>
+      <div class="bottom">
+        <div class="left">
+          <img
+            src="https://img.freepik.com/free-photo/front-view-cup-cappuccino-with-cookies-book-table_141793-2825.jpg?t=st=1712738075~exp=1712741675~hmac=2ef45e5bc48bc47ec40fc77c8a296f0217ae622f11212627b36a74573daaef12&w=360"
+            alt=""
+          />
+        </div>
+        <div class="right">
+          <h2>Certified Coffee Courses</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            quod maxime qui aliquid, repellat distinctio sapiente harum. Odio,
+            temporibus doloremque.
+          </p>
+          <h6>Image form <a href="">Freepik</a></h6>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
